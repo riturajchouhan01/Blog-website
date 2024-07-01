@@ -1,0 +1,392 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body{
+  background-color: whitesmoke;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 0 20px;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  color: white;
+  padding: 15px 0;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar-links li {
+  margin-left: 20px;
+}
+.navbar-links ul li a:-webkit-any-link{
+  margin-left: 50px;
+}
+
+ 
+a:-webkit-any-link {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+}
+a:-webkit-any-link:hover{
+  color: burlywood;
+}
+.toggle-button {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  /* justify-content: end; */
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    width: 70%;
+    /* flex-direction: column; */
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-links li {
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  .toggle-button {
+    display:inline-flex;
+  }
+}
+
+ .card1{
+  /* border: 2px solid black; */
+  height: 8000px;
+  width: 97%;
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap; 
+   margin-left: 15px; 
+   justify-content:center;
+  } 
+  .card2{
+  background-color: white;
+  /* border: 2px solid red; */
+  border-radius: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 400px;
+  width: 400px;
+  /* justify-content: center; */
+  margin-left: 55px;
+  /* margin-top: 15px; */
+}
+.card3 {
+  
+  /* border: 2px solid blue; */
+  height: 390px;
+  border-radius: 100px;
+  width: 390px;
+  text-align: center; 
+   display: flex;
+  flex-direction: column;
+  /* margin-top: 10px; */
+  /* justify-content: center;  */
+ }
+ .txt{
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 20px;
+ }
+ .card2 li{
+  list-style: none;
+ }
+
+ .btn{
+  margin-top: 40px;
+  height: 50px;
+  width: 250px;
+  border-radius: 40px;
+  
+  border: none;
+  background-color: royalblue;
+  color: white;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+ }
+ .btn:hover{
+  background-color: rgb(29, 61, 158);
+  cursor: pointer;
+ }
+@media (max-width: 450px) {
+  .card2{
+   /* display: none; */
+   height: 450px;
+   width: 300px;
+   flex-wrap: wrap;
+   word-wrap: break-word;
+  }
+  .card3{
+   /* display: none; */
+   height: 500px;
+   width: 300px;
+  }
+  
+}
+@media (max-width: 340px) {
+  .card2{
+   /* display: none; */
+   height: 450px;
+   width: 300px;
+   flex-wrap: wrap;
+   margin-left: auto;
+   word-wrap: break-word;
+  }
+  .card3{
+   /* display: none; */
+   height: 500px;
+   width: 300px;
+   margin-left: auto;
+   word-wrap: break-word;
+  }
+  
+}
+@media (max-width: 326px) {
+  .card2{
+   /* display: none; */
+   height: 450px;
+   width: 250px;
+   flex-wrap: wrap;
+   margin-left: auto;
+   word-wrap: break-word;
+  }
+  .card3{
+   /* display: none; */
+   height: 500px;
+   width: 250px;
+   word-wrap: break-word;
+   margin-left: auto;
+  }
+  .btn{
+    height: 50px;
+    width: 180px;
+  }
+  
+}
+ .card4{
+  /* border: 2px solid black; */
+  height: 28000px;
+  font-size:large;
+  width: 97%;
+  /* display: flex; */
+  margin-left: 20px;
+  flex-wrap: wrap;
+ }
+ .card5{
+  /* border: 2px solid red; */
+  margin-top: 30px;
+  height: 700px;
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  border-radius: 1350px;
+ }
+
+ .card6{
+  /* border: 2px solid blue; */
+  height: 690px;
+  border-radius: 1350px;
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  /* text-overflow: clip; */
+  
+ }
+ .image{
+  height: 30px;
+  margin-top: 10px;
+  width: 30px;
+  margin-left: 10px;
+ }
+
+
+ @media (max-width: 1300px) {
+  .card5{
+    height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+  }
+  .card6{
+    height: 900px;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+  }
+  
+ }
+@media (max-width: 840px) {
+  .card5 {
+   height: 1000px;
+   display: flex;
+   flex-wrap: wrap;
+   word-wrap: break-word;
+  }
+  .card6{
+    height: 1000px;
+    
+  }
+}
+@media (max-width:631px) {
+  .card5 {
+    height: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+   }
+   .card6{
+     height: 1100px;
+   }
+  
+}
+
+@media (max-width: 560px) {
+  
+  .card5 {
+    height: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+   }
+   .card6{
+     height: 1200px;
+   }
+  
+}
+
+@media (max-width: 480px) {
+  
+  .card5 {
+    height: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+   }
+   .card6{
+     height: 1300px;
+   }
+  
+}
+@media (max-width: 410px) {
+  
+  .card5 {
+    height: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+   }
+   .card6{
+     height: 1500px;
+   }
+  
+}
+@media (max-width: 350px) {
+  
+  .card5 {
+    height: 1800px;
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+   }
+   .card6{
+     height: 1800px;
+   }
+  
+}
+@media (max-width: 280px) {
+  
+  .card5 {
+    height: 2200px;
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+   }
+   .card6{
+     height: 2200px;
+   }
+  
+}
+.container1{
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 800px;
+}
+.input{
+  height:80px;
+  font-size: larger;
+  width: 500px;
+  display: flex;
+  padding-left: 40px;
+  justify-content: center;
+  border-radius: 15px;
+  margin-top: 25px;
+}
+.btn2{
+  height: 60px;
+  width: 200px;
+  border-radius: 115px;
+  font-size: larger;
+  background-color: royalblue;
+  color: white;
+  /* margin-left: 140px; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+}
+.btn2:hover{
+  background-color: rgb(21, 50, 138);
+  cursor: pointer;
+}
